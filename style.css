@@ -1,0 +1,143 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+body{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   background: url(LGCA2.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+ .box{
+   background:url();
+    position: absolute;
+    display: flex;
+    height: 490px;
+    width: 678px;
+    border-radius: 20px;
+    transform: rotate(-22deg);
+    overflow: hidden;
+    box-shadow: 5px 5px 10px;
+    margin-left: -300px;
+} 
+ .box::before{
+    content: '';
+    width: 180px;
+    height: 1200px;
+    background-image:linear-gradient(yellow,rgb(255, 0, 234),rgb(81, 251, 203));
+    box-shadow: 0px 0px 5px rgb(9, 9, 9);
+    animation: animate 4s linear infinite;
+   margin-left: 300px;
+   margin-top: -300px;
+overflow: hidden;
+
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: url(LGCA-Course-Registration-Form-scaled4.png);
+    border-radius: 18px;
+    background-size: cover;
+    overflow: visible;
+    height: 487px;
+    width: 674px;
+    margin-left: -0.8px;
+    margin-top: 1px;
+    
+}
+@keyframes animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+} 
+.container{
+    position:relative;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.registration{
+    background-image: linear-gradient(to right, rgba(31, 28, 29, 0.589),rgba(30, 123, 106, 0.408),rgba(42, 71, 123, 0.363)); 
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(3, 3, 3, 0.297);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.219);
+    color: #ffffff;
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.277),
+    inset 5px 5px 10px  rgba(0, 0, 0, 0.3),
+    inset 5px 5px 20px  rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif
+    ;
+    
+}
+.hrline{
+    width: 400px;
+    height: 3px;
+    background-color: #1514142a;
+}
+#register{
+    margin: 40px;
+}
+#male,#female,#others{
+    accent-color: rgb(12, 69, 255);
+}
+label{
+    font-family: sans-serif;
+    font-size: 18px ;
+    font-style: italic;
+}
+.inputbox{
+    width: 300px;
+    border: 1px solid rgb(26, 24, 24);
+    border-radius: 3px;
+    outline: 0;
+    padding: 6px;
+    background-color: #ffffff9a;
+    box-shadow: 2px 2px 9px rgba(60, 58, 58, 0.582);
+}
+form input[type="submit"]{
+    width: 100px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(29, 235, 177, 0.777);
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid rgba(226, 204, 204, 0.3);
+    box-shadow:inset 3px 3px 9px rgba(29, 228, 158, 0.793);
+    margin-bottom: 20px; 
+    
+}
+
+
+#selectbox{
+    border: none;
+    padding: 3px 10px 3px 10px;
+    width: auto;
+    color: #fff;
+    background-color: rgba(8, 133, 250, 0.599);
+    font-size: 15px; 
+    border-radius: 2px;
+}
